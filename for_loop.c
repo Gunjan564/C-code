@@ -8,7 +8,7 @@ int main()
     scanf("%d",&n);
     for ( int i=1;i<=n;i++)
     {
-        printf("\nhi");
+        printf("\nHELLO WORLD");
     }
 return 0;
 }
