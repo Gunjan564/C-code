@@ -17,18 +17,18 @@ void main()
     if(d<0)
     {
         printf("Equation has imaginary roots:");
-        printf("\nx = (%0.0f+%0.0fi)/%0.0f         x = (%0.0f%0.0fi)/%0.0f",-b,-d,2*a,b,d,2*a);
+        printf("\nx = (%0.0f+%0.2fi)/%0.0f         x = (%0.0f-%0.2fi)/%0.0f",-b,sqrt(-d),2*a,-b,sqrt(-d),2*a);
     }
     else
     if(d>0)
     {
         printf("Equation has real and unequal roots:");
-        printf("\nx1 = %0.00f       x2 = %0.00f",x1,x2);
+        printf("\nx1 = %0.2f       x2 = %0.2f",x1,x2);
     }
     else
     {
         printf("Equation has equal roots");
-        printf("\nx1 = %0.00f       x2 = %0.00f",x1,x2);
+        printf("\nx1 = %0.2f       x2 = %0.2f",x1,x2);
     }
     
 }
