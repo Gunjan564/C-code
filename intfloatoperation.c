@@ -2,7 +2,7 @@
 int main()
 {
     /*
-    == CASE 1(if both operrands are int or float then
+    == CASE 1(if both operrands are either int or float then
     the output will be stored only in int or float 
     respectively.Even if the assigned values are in 
     decimal the output will be in the input format 
