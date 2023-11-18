@@ -1,3 +1,4 @@
+//pinter stores the value of operator
 #include <stdio.h>
 
 int main()
