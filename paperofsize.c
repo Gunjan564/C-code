@@ -10,7 +10,7 @@ int main()
             b=b;
             l=l/2;
         }
-        if(b>l)
+        else if(b>l)
         {
             l=l;
             b=b/2;
