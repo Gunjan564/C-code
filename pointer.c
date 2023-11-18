@@ -14,3 +14,4 @@ int main()
     //%p is used to print address 
     return 0;
 }
+//NULL pointer 
