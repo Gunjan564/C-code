@@ -1,4 +1,4 @@
-//pinter stores the value of operator
+//pointer stores the address of operator 
 #include <stdio.h>
 
 int main()

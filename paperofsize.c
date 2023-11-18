@@ -1,10 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    int n,l,b;
+    int n;
+    float l,b;
     for(n=0,l=1189,b=841;n<=8;n++)
     {
-        printf("A(%d) = %dmm x %dmm = %d\n",n,l,b,l*b);
+        printf("A(%d) = %0.4fmm x %0.4fmm = %0f\n",n,l,b,l*b);
         if (l>b)
         {
             b=b;
