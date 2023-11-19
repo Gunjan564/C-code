@@ -2,17 +2,17 @@
 
 int main()
 {
-    int n,i;
+    int n, i;
     printf("Enter a five digit number: ");
-    scanf("%d",&n);
-    i=1;
-    while(n<10000||n>99999)
+    scanf("%d", &n);
+    i = 1;
+    while (n < 10000 || n > 99999)
     {
         printf("Enter a five digit number: ");
-    scanf("%d",&n);
-    i++;
+        scanf("%d", &n);
+        i++;
     }
-    if(n>=10000&&n<=99999)
+    if (n >= 10000 && n <= 99999)
     {
         printf("congratulations!");
     }
