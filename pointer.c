@@ -13,6 +13,7 @@ int main()
     printf("\nhi%p", ptra); // value of null pointer
     //%x is used to print hexadecimal value
     //%p is used to print address
+    printf("");
     return 0;
 }
 // NULL pointer - a pointer that is not assigned any value but NULL
