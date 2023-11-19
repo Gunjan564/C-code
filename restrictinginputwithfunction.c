@@ -2,12 +2,13 @@
 int five(int n)
 {
     printf("Enter a five digit number: ");
-    scanf("%d",&n);
-    if(n<10000||n>99999)
+    scanf("%d", &n);
+    if (n < 10000 || n > 99999)
     {
         five(n);
     }
-    else printf("Congratulations");
+    else
+        printf("Congratulations");
     return 0;
 }
 int main()
