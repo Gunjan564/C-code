@@ -11,6 +11,7 @@ int main()
     printf("\nhi%p", pt);   // address of variable a
     printf("\nhi%x", a);    // value stored in a in hexadecimal form
     printf("\nhi%p", ptra); // value of null pointer
+    
     //%x is used to print hexadecimal value
     //%p is used to print address
     printf("");
