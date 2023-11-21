@@ -2,7 +2,7 @@
 
 int main()
 {
-    int n, p;
+    int n, p, a;
     printf("Enter the value of n: ");
     scanf("%d", &n);
     p = 0;
@@ -27,6 +27,13 @@ int main()
             p = p * 10 + n % 10;
             n = n / 10;
     }
-    printf("%d", p);
+    
+    a=0;
+    while(p!=0)
+    {
+        a = a * 10 + p % 10;
+        p = p / 10;
+    }
+    printf("%d", a);
     return 0;
 }
