@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-    int n, p, a;
+    int n, p, a,i;
     printf("Enter the value of n: ");
     scanf("%d", &n);
     p = 0;
@@ -11,29 +12,28 @@ int main()
         if (n % 10 == 0)
         {
             n = n + 1;
-            p = p * 10 + n % 10;
+            p = p  + (n % 10) * pow(10,i);
             n = n / 10;
+            i++;
             continue;
         }
         if (n % 10 == 1)
         {
             n = n - 1;
-            p = p * 10 + n % 10;
+            p = p  + (n % 10) * pow(10,i);
             n = n / 10;
+            i++;
             continue;
         }
 
         else
-            p = p * 10 + n % 10;
+        {
+            p = p  + (n % 10) * pow(10,i);
             n = n / 10;
+            i++;
+        }
+        
     }
-    
-    a=0;
-    while(p!=0)
-    {
-        a = a * 10 + p % 10;
-        p = p / 10;
-    }
-    printf("%d", a);
+    printf("%d", p);
     return 0;
 }
