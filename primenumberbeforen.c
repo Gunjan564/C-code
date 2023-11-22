@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int main()
 {
     int i, n, r, a;
@@ -29,5 +27,6 @@ int main()
         n = n - 1;
         r++;
     }
+    printf("%d",2);
     return 0;
 }
