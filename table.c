@@ -2,14 +2,12 @@
 
 int main()
 {
-    for (int i=19;i<=190;i=i+19)
+    int n,i;
+    printf("Enter a number n: ");
+    scanf("%d",&n);
+    for (int i=1;i<=10;i++)
         {
-            //if(i%19==0)
-            //{
-            printf("\n%d",i);
-            //}
+            printf("\n%d x %d = %d",n,i,n*i);
         }
-
-
-return 0;
+        return 0;
 }
