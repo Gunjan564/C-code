@@ -1,18 +1,30 @@
-//check whether the number is armstrong for a
-#include<stdio.h>
-int main()
+// check whether the number is Armstrong or not 
+#include <stdio.h>
+#include<math.h>
+int main() 
 {
-    int r,n;
-    printf("Enter a number: ");
+    int n,a,s,b,i,arr[10];
+    printf("Enter n: ");
     scanf("%d",&n);
-    int a=n;
-    for(r=0;n>0;n=n/10)
+    a=n;
+    for(i=1;n!=0;i++)
     {
-        r=((n%10)*(n%10)*(n%10))+r;
+        arr[i]=n%10;
+        n=n/10;
     }
-    if(r==a)
-    printf("Number is Angstorm\n");
+    i=i-1;
+    b=i;
+    for(s=0;b!=0;b--)
+    {
+        s=s+pow(arr[b],i);
+    }
+    if(s==a)
+    {
+        printf("Armstrong Number");
+    }
     else
-    printf("Not an Angstorm\n");   
+    {
+        printf("Not an Armstrong Number");
+    }
     return 0;
 }
