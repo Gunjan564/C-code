@@ -9,9 +9,7 @@ int main()
     while (n!=0)
     {
        n=n/10;
-       i=n%10;
-       s=s+i;
-     printf("%d Digit number ",i); 
+       i++;
     }
     printf("%d Digit number ",i); 
      
