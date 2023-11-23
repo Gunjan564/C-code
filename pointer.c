@@ -22,7 +22,7 @@ int main()
     printf("\n%x",*pt+2);//value stored in variable is increased by two bytes 
                          //and printed in hexadecimal
     printf("\n%p",poi);//address of first element of array
-    printf("\n%p",&arr[2]);//value of element of array
+    printf("\n%p",&arr[2]);//address of element present at arr[2];
     printf("\n%p",&arr);//address of first element of array
     printf("\n%d",*poi);//value of first element of array
     printf("\n%p",&x);//address of x
