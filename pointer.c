@@ -25,6 +25,7 @@ int main()
     printf("\n%p",&arr[2]);//address of element present at arr[2];
     printf("\n%p",&arr);//address of first element of array
     printf("\n%d",*poi);//value of first element of array
+    printf("\n%d",poi[3]);//value of the element in array at arr[3]
     printf("\n%p",&x);//address of x
     printf("\n%d",x+y);
     //%x is used to print hexadecimal value
