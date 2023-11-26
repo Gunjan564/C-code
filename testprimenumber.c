@@ -4,7 +4,7 @@ int main()
     int i,n;
     printf("Enter a positive number: ");
     scanf("%d",&n);
-    for ( i = 2; i < n; n/i,i++)
+    for ( i = 2; i < n; n/i,i++)//n/i is not necessary. code will also work efficiently without it
     {
        if (n%i==0)
        {
