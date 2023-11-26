@@ -8,6 +8,7 @@ int func(int file[])
         file[i]=file[i]+1;
     }
 }
+//address of is passes through functions 
 int main() 
 {
    int i,arr[]={1,2,3,4,5,6,7,8,9};
