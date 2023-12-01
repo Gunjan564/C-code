@@ -17,6 +17,8 @@ int main()
         }
     }
     now:
-    {printf("ZERO");}
+    {
+        printf("ZERO");
+    }
     return 0;
 }
