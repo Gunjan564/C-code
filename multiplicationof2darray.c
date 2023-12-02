@@ -35,10 +35,10 @@ int main()
         {
             printf("%d ",arr[row2][col2]);
         }
-        printf("\n")
+        printf("        \n")
     }
 
 
-    
+
     return 0;
 }
