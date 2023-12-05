@@ -19,6 +19,15 @@ int main()
     e3.age = 21;
     e3.grade = 'C';
     p=&e1;
-    printf("%p",p);
+    printf("Address of e1 %p\n",p);
+    printf("Name of first employ is %s\n",e1.name);
+    printf("Age of 1st employ is %d\n",e1.age);
+    printf("Grade of first employ is %c\n",e1.grade);
+    printf("Name of 2nd employ is %s\n",e2.name);
+    printf("Age of 2nd employ is %d\n",e2.age);
+    printf("Grade of 2nd employ is %c\n",e2.grade);
+    printf("Name of 3rd employ is %s\n",e3.name);
+    printf("Age of 3rd employ is %d\n",e3.age);
+    printf("Grade of 3rd employ is %c\n",e3.grade);
     return 0;
 }
