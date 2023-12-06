@@ -8,7 +8,7 @@ int main()
     
     scanf("%d\n", &num);
     
-https://photos.app.goo.gl/ZGLjX1VxybxUJUpt5    
+    https://photos.app.goo.gl/ZGLjX1VxybxUJUpt5    
     do
     {
         printf("%d\n", index - 1);
