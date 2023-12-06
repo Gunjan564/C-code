@@ -4,7 +4,7 @@
 int main()
 {
     int num, index = num;
-    printf("Enter the number: ");
+    printf("Enter the number heloooooooooooo: ");
     
     scanf("%d\n", &num);
     
