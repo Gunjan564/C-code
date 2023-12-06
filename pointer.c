@@ -9,7 +9,8 @@ int main()
     int*poi=arr;
     int x=*&arr[2];
     int y=*&arr[3];
-    printf("\n%u", &a);//address of variable a, %u is mentioned in book but showing a warning here
+    printf("\n%u  hello\n", &a);//address of variable a, %u is mentioned in book but showing a warning here
+    printf("\n%p  hellohi\n", &a);//address of variable a, %u is mentioned in book but showing a warning here
     printf("%d", *pt);// value of the variable the address of which stored in pointer
     printf("\n%p", &pt);//address of pointer pt
     printf("\n%p", pt);//address of variable a
@@ -24,7 +25,7 @@ int main()
     printf("\n%p",poi);//address of first element of array
     printf("\n%p",&arr[2]);//address of element present at arr[2];
     printf("\n%p",&arr);//address of first element of array
-    printf("\n%d",*poi);//value of first element of array
+    printf("\nfirst element of array: %d ",*poi);//value of first element of array
     printf("\n%d",poi[3]);//value of the element in array at arr[3]
     printf("\n%p",&x);//address of x
     printf("\n%d",x+y);
