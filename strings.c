@@ -19,7 +19,8 @@ void printstr(char str[])
 }
 int main()
 {
-    char str[9],new[9],copy[20];
+    char str[9],new[13],copy[22],pointer[67];
+    char *ptr="eye";
     printf("Enter the string str: ");
     gets(str);//inputs the string
     printf("Enter the string new: ");
@@ -44,7 +45,7 @@ int main()
     puts(str);
     strcpy(copy,strcat(str,new));//for strcpy(a,b), the value of b will be stored in a, and 
     //for strcpy(a,"hello"), the value of a will become hello
-    printf("Copied string: %s",copy);
-    printf("The strcmp for str and new returns: %d",strcmp(str,new));
+    printf("The strcmp for str and new returns: %d\n",strcmp(str,new));
+    printf("\n%s\n",*ptr); 
     return 0;
 }
