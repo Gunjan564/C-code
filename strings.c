@@ -45,7 +45,9 @@ int main()
     puts(str);
     strcpy(copy,strcat(str,new));//for strcpy(a,b), the value of b will be stored in a, and 
     //for strcpy(a,"hello"), the value of a will become hello
-    printf("The strcmp for str and new returns: %d\n",strcmp(str,new));
-    printf("\n%s\n",*ptr); 
+    printf("The strcmp for str and new returns: %d\n",strcmp(new,str));
+    strcpy(str,"hello");
+    puts(str);
+    printf("\n%s\n",ptr); 
     return 0;
 }
