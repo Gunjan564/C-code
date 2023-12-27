@@ -20,7 +20,7 @@
 //     printf("\n");
 //     rev(arr,srr,i);
 // }
-      int main()
+    int main()
    {
         int i,arr[]={1,2,3,4,5,6,7};
         for(i=0;i<sizeof(arr)/8;i++)
