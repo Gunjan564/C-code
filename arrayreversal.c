@@ -20,18 +20,18 @@
 //     printf("\n");
 //     rev(arr,srr,i);
 // }
-   int main()
+      int main()
    {
         int i,arr[]={1,2,3,4,5,6,7};
-        for(i=0;i<sizeof(arr)/2;i++)
+        for(i=0;i<sizeof(arr)/8;i++)
         {
-            arr[sizeof(arr)-1-i]=arr[sizeof(arr)-1-i]+arr[i];
-            arr[i]=arr[sizeof(arr)-1-i]-arr[i];
-            arr[sizeof(arr)-1-i]=arr[sizeof(arr)-1-i]-arr[i];
+            arr[(sizeof(arr)/4)-1-i]=arr[(sizeof(arr)/4)-1-i]+arr[i];
+            arr[i]=arr[(sizeof(arr)/4)-1-i]-arr[i];
+            arr[(sizeof(arr)/4)-1-i]=arr[(sizeof(arr)/4)-1-i]-arr[i];
         }
-        for(i=0;i<sizeof(arr);i++)
+        for(i=0;i<sizeof(arr)/4;i++)
         {
-            printf("%d",arr[i]);
+            printf("%d ",arr[i]);
         }
         return 0;
    }
