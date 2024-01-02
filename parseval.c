@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h>
 void parse(char arr[])//Function prototyping 
