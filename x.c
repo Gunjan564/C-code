@@ -17,13 +17,9 @@
 
 //     return 0;
 // }
-#include<stdio.h>
-
-int main()
+int c=54;
+int b=5;
+int add(int a,int b)
 {
-    int i[8];
-    char eye[5]={'a','b','c','d','\0'};
-    char hello[5]="hel";
-    
-    return 0;
+    return a+b;
 }

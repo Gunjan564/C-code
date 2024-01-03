@@ -3,3 +3,7 @@ struct
 {
     int name;
 };
+int main()
+{
+    
+}
