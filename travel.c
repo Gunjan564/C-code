@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 int main() {
+  
     int i,j;
     struct drivers
     {
@@ -11,7 +12,7 @@ int main() {
         int kms;
     } ;
     struct drivers details[3];
-    for(i=0,j=1;i<1,j<=3;i++,j++)
+    for(i=0,j=1;i<1,j<2;i++,j++)
     {
         printf("Driver %d\n",j);
         printf("Enter the name of the driver: ");
@@ -24,7 +25,7 @@ int main() {
         scanf("%d",& details[i].kms);
         printf("\n");
     }
-    for(i=0,j=1;i<1,j<3;i++,j++)
+    for(i=0,j=1;i<1,j<2;i++,j++)
     {
         printf("Driver No.%d \n",j);
         printf("Name: ");
@@ -37,4 +38,5 @@ int main() {
     }
     return 0;
 }
+
 
