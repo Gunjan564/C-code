@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<string.h>
 // use of malloc
 // int main()
 // {
@@ -35,6 +36,7 @@ int main()
     {
         printf("The %d element of the array is: %d\n", i, ptr[i]);
     }
+    printf("%d\n",sizeof(*ptr));
     //use of realloc
     printf("Enter the NEW size of array you want to create: ");
     scanf("%d", &n);
@@ -48,5 +50,5 @@ int main()
     {
         printf("The %d element of the array is: %d\n", i, ptr[i]);
     }
+    printf("\n%d",sizeof(realloc));
 }
-
