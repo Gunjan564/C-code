@@ -87,7 +87,7 @@ int main()
     }
     printf("\nThe Sum of elements of Principal diagonal of 2nd array: %d",sum);
     //transpose of matrix
-    printf("\nTranspose of matrix a is: \n");
+    printf("\nTranspose of 1st matrix is: \n");
     for(col1=1;col1<=3;col1++)
     {
         for(row1=1;row1<=3;row1++)
