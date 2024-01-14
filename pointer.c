@@ -15,7 +15,7 @@ int main()
     printf("\n%p", &pt);//address of pointer pt
     printf("\n%p", pt);//address of variable a
     printf("\n%x", a);//value stored in a in hexadecimal form
-    printf("\n%p", ptra);//value of null pointer
+    printf("\nvalue of null pointer: %d", ptra);//value of null pointer
     printf("\n%p",pt+2);//address of the variable pointed by the pointer is increased by two bytes
     printf("\n%p",&a+2);//address of variable increased by two bytes
     printf("\n%d",*pt+2);//value stored in variable is increased by two bytes
