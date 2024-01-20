@@ -3,11 +3,10 @@
 #include <stdlib.h>
 int main()
 {
-    int i, n, e,ph,j;
+    int i, n, e;
     struct employ
     {
         char *id;
-        int phone;
     } ;
     printf("Enter the no. of employees:");
     scanf("%d", &e);
@@ -22,13 +21,6 @@ int main()
         getchar();
         printf("Enter the id: ");
         gets((ptr+i-1)->id);
-        printf("Enter the no. of digits in your phone numbers: ");
-        scanf("%d",&ph);
-        (ptr+i-1)->phone=(int*)malloc(ph*sizeof(int));
-        for(j=0;j<ph;j++)
-        {
-            scanf("%d",&(ptr+j-1)->phone);
-        }
     }
     for(i=1;i<=e;i++)
     {
