@@ -12,6 +12,7 @@ int main()
     printf("Enter the no. of employees:");
     scanf("%d", &e);
     struct employ *ptr;
+    ptr=NULL;
     ptr = (struct employ *)malloc(e * sizeof(struct employ));
     for (i = 1; i <= e; i++)
     {
@@ -36,5 +37,7 @@ int main()
         printf("Employ %d id: ",i);
         puts((ptr+i-1)->id);
     }
+    free(ptr);
+    ptr="NULL";
     return 0;
 }

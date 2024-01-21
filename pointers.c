@@ -11,9 +11,9 @@ int main()
     int y=*&arr[3];
     printf("\nAddress of variable a: %u", &a);//%u is mentioned in book but showing a warning here
     printf("\nAddress of variable a: %p\n", &a);//Address of variable a, %u is mentioned in book but showing a warning here
-    printf("value of the variable the address of which stored in pointer: %d", *pt);// 
+    printf("value of the variable the address of which stored in pointer: %d", *pt);//
     printf("\nAddress of pointer pt: %p", &pt);
-    printf("\nAddress of variable a: %p", pt); 
+    printf("\nAddress of variable a: %p", pt);
     printf("\nvalue stored in 'a' in hexadecimal form: %x", a);
     printf("\nvalue of null pointer: %d", ptra);
     printf("\nAddress of the variable pointed by the pointer is increased by two bytes: %p",pt+2);
@@ -32,7 +32,7 @@ int main()
     //%p is used to print address
     return 0;
 }*/
-//VOID POINTER - can be typecasted
+// VOID POINTER - can be typecasted
 /*{
     void *poi;
     int a=5;
@@ -42,6 +42,25 @@ int main()
 // NULL pointer - a pointer that is not assigned any value but NULL
 /*
 {
-    
+    int *ptr=NULL;
+    printf("%d\n",*ptr);//NULL pointer cannot be derefrenced
+    printf("%d",ptr);
+    return 0;
+}*/
+// Dangling Pointer - Freed
+{
+    int *func();
+    {
+        int a;
+        return &a;
+    }
+    int *stray = func();
+    printf("%d", stray);
+    int *poi;
+    //random scope begins
+    {
+        int b;
+        poi=&b;
+    }//random scope ends
+    printf("%d",poi);
 }
-*/
