@@ -49,9 +49,9 @@ int main()
 }*/
 // Dangling Pointer - Freed
 {
+    int a=2;
     int *func();
     {
-        int a;
         return &a;
     }
     int *stray = func();
