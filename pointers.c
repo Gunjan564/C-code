@@ -1,7 +1,7 @@
 // pointer stores the address of operator
 #include <stdio.h>
 int main()
-/*{
+{
     int a = 9, b;
     int *pt = &a;
     int *ptra = NULL;
@@ -31,7 +31,7 @@ int main()
     //%x is used to print hexadecimal value
     //%p is used to print address
     return 0;
-}*/
+}
 // VOID POINTER - can be typecasted
 /*{
     void *poi;
@@ -47,6 +47,7 @@ int main()
     printf("%d",ptr);
     return 0;
 }*/
+/*
 // Dangling Pointer - Freed
 {
     int a=2;
@@ -63,4 +64,4 @@ int main()
         poi=&b;
     }//random scope ends
     printf("%d",poi);
-}
+}*/

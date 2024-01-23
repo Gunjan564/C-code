@@ -32,7 +32,7 @@ int main()
 
     // Use of fgets()
     char getstring[7]; 
-    fgets(getstring, 4, file);
+    fgets(getstring, 7, file);
 
     // Use if fprintf :- Print the content of the file on Terminal or in the file itself
     printf("The content of the file has: %s", scanstring);
@@ -42,7 +42,13 @@ int main()
     file = fopen("file1.txt", "w");
 
     // Printing the desired text in file
-    fprintf(file, "New_content");
+    fprintf(file, "New content ");
+
+    //Use of fputc:- Printing the desired character in file
+    fputc('h',file);
+
+    //Use fputs:- Printing the desired string in file
+    fputs(" Namaste hello",file);
 
     // Close the file
     fclose(file);
