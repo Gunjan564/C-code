@@ -1,5 +1,1 @@
-printf("Enter the no. of digits in your phone numbers: ");
-        // scanf("%d",&ph);
-        // {
-            
-        // }
+printf("\n%s\n",*ptr); 
