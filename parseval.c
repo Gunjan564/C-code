@@ -6,20 +6,17 @@ void parse(char arr[])//Function prototyping
     //Removing Tags
     for( i=0;i<=strlen(arr);i++)
     {
-        if(arr[i]=='<')
+        if(arr[i]=='<'||arr[i]!='>')
         {
-            index=1;
+            arr[new]=arr[i+1];
+            new++;
             continue;
         }
         else if(arr[i-1]=='>')
         {
-            index=0;
+            arr[i-1]='\0';
         }
-        if(index==0)
-        {
-            arr[new]=arr[i];
-            new++;
-        }
+        
     }
     //Removing Trailing spaces from the beginning 
     while(arr[0]==' ')
