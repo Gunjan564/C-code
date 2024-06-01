@@ -1,10 +1,9 @@
-#include<studio.h>
+#include<stdio.h>
 int main()
 {
-    int i, n, r, a;
+    int i, n, a;
     printf("Enter a positive number: ");
     scanf("%d", &n);
-    r = 0;
     while (n != 1)
     {
         a = n;
@@ -26,7 +25,6 @@ int main()
             }
         }
         n = n - 1;
-        r++;
     }
     printf("%d",2);
     return 0;
