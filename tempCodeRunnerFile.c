@@ -1,1 +1,1 @@
-printf("\n%s\n",*ptr); 
+the sky is blue
